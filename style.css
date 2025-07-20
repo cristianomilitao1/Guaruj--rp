@@ -1,0 +1,155 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fefefe;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+ 
+ 
+}
+
+/* Cabeçalho */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: rgb(172, 198, 233);
+  font-weight: 500;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+/* Seções */
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 490px;
+  
+  
+}
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: rgb(245, 209, 209);
+  background: rgba(0,0,0,0.6);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.content-section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.content-section h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  
+}
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #444;
+  border-left: 4px solid #3498db;
+  padding-left: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #2c3e50;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #34495e;
+  opacity: .8;
+}
+.botao-wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+/* Rodapé */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #2c3e50;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

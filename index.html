@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Loja RP - Guarujá São Paulo </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="http://127.0.0.1:5500/guaruja.html#inicio">Início</a></li>
+        <li><a href="http://127.0.0.1:5500/guaruja.html#Sobre">Sobre</a></li>
+        <li><a href="#Vips">Vips</a></li>
+        <li><a href="http://127.0.0.1:5500/guaruja.html#contato">Contato</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  <header>
+    <img src="img/bamer guarujá.jpg" alt="logo">
+    <h1>Loja Oficial - Guarujá São Paulo</h1>
+    <nav>
+      <select id="filter" onchange="filtrarCategoria()">
+        <option value="todos">Todas Categorias</option>
+        <option value="carro">Carros</option>
+        <option value="casa">Casas</option>
+       
+      </select>
+    </nav>
+  </header>
+
+  <main id="produtos">
+    <!-- Produtos serão inseridos pelo JS -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cidade RP - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
